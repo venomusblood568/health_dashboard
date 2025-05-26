@@ -8,7 +8,6 @@ export default function App(){
     <div className="flex w-full min-h-screen bg-[#FFFFFF] font-sans text-[#1a1a1a]">
       {/* Sidebar */}
       <Sidebar />
-
       {/* Main Content Area */}
       <div className="flex flex-1 gap-4">
         <div className="w-[47%]">
