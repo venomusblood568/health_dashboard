@@ -11,7 +11,7 @@ import {
 
 export default function Sidebar() {
   return (
-    <aside className="w-64 min-h-screen bg-[#F5F9FF] border-r border-white p-6 flex flex-col justify-between">
+    <aside className="w-64 min-h-screen bg-[#F5F9FF] p-6 flex flex-col justify-between">
       <div>
         <h1 className="text-2xl font-bold text-[#25CFDD] mb-10 p-5 font-[Nunito]">
           Health<span className="text-[#121651]">care.</span>
