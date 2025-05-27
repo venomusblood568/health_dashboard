@@ -25,7 +25,7 @@ export function Organhealth(){
               color: "#FE725A",
             },
           ].map(({ emoji, label, date, value, color }) => (
-            <div key={label} className="bg-[#F5F9FF] p-4 rounded-xl shadow">
+            <div key={label} className="bg-[#F5F9FF] p-4 rounded-xl shadow hover:shadow-xl">
               <div className="text-xl font-semibold mb-2">
                 <span className="text-3xl mr-2">{emoji}</span> {label}
               </div>

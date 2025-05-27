@@ -1,5 +1,5 @@
 import { Search, Bell, ChevronDown, MoveRight} from "lucide-react";
-import { Organhealth } from "../sub_components/organs";
+import { Organhealth } from "../sub_components/organs_health";
 import ActivityChart from "../sub_components/activity_chart";
 
 export default function Dashboard() {
@@ -25,7 +25,7 @@ export default function Dashboard() {
       </span>
       <div className="flex h-[400px] gap-8">
         {/* Left half: Image box */}
-        <div className="w-1/2 relative overflow-visible  rounded-md bg-gray-50 flex items-center justify-center">
+        <div className="w-1/2 relative overflow-visible  rounded-md bg-gray-50 flex items-center justify-center hover:shadow-xl">
           <div className="w-96 h-64 relative overflow-visible">
             <img
               src="/body.png"
@@ -34,7 +34,7 @@ export default function Dashboard() {
               style={{ pointerEvents: "none" }}
             />
           </div>
-          <div className="absolute top-2 right-2">
+          <div className="absolute top-2 right-2 hover:text-black">
             <Search className="w-5 h-5 text-gray-600" />
           </div>
         </div>
@@ -42,13 +42,13 @@ export default function Dashboard() {
         {/* Right half: Vertical cards */}
         <div className="w-1/2 flex flex-col justify-center space-y-4">
           <Organhealth />
-          <span className="flex justify-end items-center gap-1 cursor-pointer text-sm font-semibold">
+          <span className="flex justify-end items-center gap-1 cursor-pointer text-sm font-semibold hover:text-black">
             <span>Details</span>
             <MoveRight />
           </span>
         </div>
       </div>
-      <div>
+      <div className="hover:shadow-xl">
         <ActivityChart />
       </div>
     </div>
